@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/background_dark"
+    tools:barrierAllowsGoneWidgets="?android:attr/windowSwipeToDismiss"
+    tools:barrierDirection="left"
+    tools:context=".MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/CALCULER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginTop="157dp"
+        android:text="calculer" />
+
+    <EditText
+        android:id="@+id/chiffreB"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CALCULER"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-157dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/chiffreA"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CALCULER"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-157dp"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-164dp"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/CALCULER"
+        android:text="euclide etendu donnez Deux entiers premier entre eux"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+</RelativeLayout>

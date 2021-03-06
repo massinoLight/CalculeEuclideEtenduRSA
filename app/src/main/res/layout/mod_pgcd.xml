@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@android:color/white"
+    tools:barrierAllowsGoneWidgets="?android:attr/windowSwipeToDismiss"
+    tools:barrierDirection="left"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/modulo"
+        android:layout_width="258dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="97dp"
+        android:autoText="true"
+        android:backgroundTint="@android:color/background_light"
+        android:editable="true"
+        android:text=" % PGCD "
+        android:textAllCaps="?android:attr/windowOverscan"
+        android:textSize="@android:dimen/app_icon_size"
+        tools:autoText="true"
+        tools:background="@android:color/background_light"
+        tools:backgroundTint="@android:color/background_light"
+        tools:capitalize="words"
+        tools:editable="?android:attr/windowOverscan"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:textColor="@android:color/holo_green_dark"
+        tools:textSize="@android:dimen/app_icon_size" />
+
+    <AutoCompleteTextView
+        android:id="@+id/resultat"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chiffre2"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/chiffre1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/chiffre2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chiffre1"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/chiffre1"
+        android:layout_centerVertical="true"
+        android:text="le modulo est"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/pgcd"
+        android:layout_alignEnd="@+id/chiffre1"
+        android:text="le PGCD est"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:textSize="24sp" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/pgcd"
+        android:layout_width="131dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="58dp" />
+
+</RelativeLayout>
